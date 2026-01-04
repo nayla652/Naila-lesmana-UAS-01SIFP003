@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Layout Web</title>
+    <style>
+        body{
+            background-color: #BC8F8F;
+        }
+        #header{
+            width: 900px;
+            height:300px;
+            background-color: red;
+            background-image:url(gambar/Soekarno.jpg);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #content{
+            width: 850px;
+            height: auto;
+            background-color: #FAEBD7;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 20px 10px 20px;
+            border: 5px dashed #6495ED;
+            
+        }
+        #content h2{
+            color: #008B8B;
+            font-size: 24px;
+            font-family: verdana;
+        }
+        #content p{
+            color: #D2691E;
+            font-size: 16px;
+            font-family: verdana;
+            text-align: justify;
+            line-height: 1.8em;
+        }
+
+        #footer{
+            
+            width: 900px;
+            height: 50px;
+            background-color: #7FFF00;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 25;
+            
+        }
+    </style>
+     <tr>
+            <td align="center">
+            <!--Menu-->
+            <hr size="2" color="red">
+            <a href="HOME.html"><button>HOME.html</button></a> 
+            <a href="GALLERY US.HTML"><button>GALLERY US.HTML</button></a> 
+            <a href="Formulir.HTML"><button>Formulir.HTML</button></a> 
+            <a href="ABOUT US.HTML"><button>ABOUT US.HTML</button></a>
+            <hr size="2" color="red">
+            <!--Menu-->
+            </td>
+        </tr>
+</head>
+<body>
+    <script>
+    var waktu = new Date();
+    var jam = waktu.getHours();
+    var minute = waktu.getMinutes();
+    
+    // Menambahkan angka 0 di depan menit jika di bawah 10 agar formatnya 10:05 bukan 10:5
+    if (minute < 10) { minute = "0" + minute; }
+
+    // Menampilkan Waktu Lengkap dan Jam
+    document.write("Tanggal: " + waktu.toDateString() + "<br>");
+    document.write("<b>Sekarang Jam " + jam + ":" + minute + "</b><br>");
+    document.write("Halo Pembaca, ");
+
+    // Logika Sapaan
+    if (jam >= 0 && jam <= 9) {
+        document.write("Selamat Pagi!");
+    } 
+    else if (jam <= 13) {
+        document.write("Selamat Siang!");
+    } 
+    else if (jam <= 17) {
+        document.write("Selamat Sore!");
+    } 
+    else {
+        document.write("Selamat Malam!");
+    }
+</script>
+    <div id="header"></div>
+    <div id="content">
+        <tr>
+            <td align="center">
+                <hr size="3" color="red">
+                <h1> HUBUNGI KAMI PRESIDEN 1 INDONESIA <br>
+                     IR SOEKARNO</h1>
+                <hr size="3" color="red">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <form action="#" method="post">
+                    <table border="0" bgcolor="#e5e5e5" cellspacing="10" cellpadding="5" align="center">
+                        <h2>Formulir Kontak</h2>
+                        <tr>
+                            <td align="right"><label for="nama">Nama:</label></td>
+                            <td><input type="text" id="nama" name="nama" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="alamat">Alamat:</label></td>
+                            <td><textarea id="alamat" name="alamat" rows="3" cols="48" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="kota">Kota:</label></td>
+                            <td><input type="text" id="kota" name="kota" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Jenis Kelamin:</td>
+                            <td>
+                                <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+                                <label for="laki">Laki-laki</label>
+                                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                                <label for="perempuan">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="usia">usia:</label></td>
+                            <td><input type="text" id="usia" name="usia" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="pekerjaan">Pekerjaan:</label></td>
+                            <td><input type="text" id="pekerjaan" name="pekerjaan" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="hobby">Hobby:</label></td>
+                            <td><input type="text" id="hobby" name="hobby" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="pesan">Pesan:</label></td>
+                            <td><textarea id="pesan" name="pesan" rows="5" cols="48" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Kirim">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+        
+                  
+    </div>
+    <div id="footer">
+     <tr>
+        &copy;CopyRight (Naila lesmana, Nim:251011700171, Kelas:01SIFP003)2025
+    </tr>
+</div>
+</body>
+</html>

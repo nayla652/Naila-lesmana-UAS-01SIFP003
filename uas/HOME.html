@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Layout Web</title>
+    <style>
+    	body{
+    		background-color: #DEB887;
+    	}
+    	#header{
+    		width: 900px;
+    		height:300px;
+    		background-color: red;
+    		background-image:url(gambar/soekarno.jpg);
+    		margin-left: auto;
+    		margin-right: auto;
+    	}
+    	#content{
+    		width: 850px;
+    		height: auto;
+    		background-color: pink;
+    		margin-left: auto;
+    		margin-right: auto;
+    		padding: 10px 20px 10px 20px;
+    		border: 5px dashed red;
+    		
+    	}
+    	#content h2{
+    		color: darkred;
+    		font-size: 24px;
+    		font-family: verdana;
+    	}
+    	#content p{
+    		color: blue;
+    		font-size: 16px;
+    		font-family: verdana;
+    		text-align: justify;
+    		line-height: 1.8em;
+    	}
+
+    	#footer{
+    		
+    		width: 900px;
+    		height: 50px;
+    		background-color: skyblue;
+    		margin-left: auto;
+    		margin-right: auto;
+    		text-align: center;
+    		font-size: 20px;
+    		padding-top: 25;
+    		
+    	}
+    </style>
+   <tr>
+            <td align="center">
+            <!--Menu-->
+            <hr size="2" color="red">
+            <a href="HOME.html"><button>HOME.html</button></a> 
+            <a href="GALLERY US.HTML"><button>GALLERY US.HTML</button></a> 
+            <a href="Formulir.HTML"><button>Formulir.HTML</button></a> 
+            <a href="ABOUT US.HTML"><button>ABOUT US.HTML</button></a>
+            <hr size="2" color="red">
+            <!--Menu-->
+            </td>
+        </tr>
+</head>
+<body>
+    <script>
+    var waktu = new Date();
+    var jam = waktu.getHours();
+    var minute = waktu.getMinutes();
+    
+    // Menambahkan angka 0 di depan menit jika di bawah 10 agar formatnya 10:05 bukan 10:5
+    if (minute < 10) { minute = "0" + minute; }
+
+    // Menampilkan Waktu Lengkap dan Jam
+    document.write("Tanggal: " + waktu.toDateString() + "<br>");
+    document.write("<b>Sekarang Jam " + jam + ":" + minute + "</b><br>");
+    document.write("Halo Pembaca, ");
+
+    // Logika Sapaan
+    if (jam >= 0 && jam <= 9) {
+        document.write("Selamat Pagi!");
+    } 
+    else if (jam <= 13) {
+        document.write("Selamat Siang!");
+    } 
+    else if (jam <= 17) {
+        document.write("Selamat Sore!");
+    } 
+    else {
+        document.write("Selamat Malam!");
+    }
+</script>
+	<div id="header"></div>
+	<div id="content">
+	    <!-- content awal -->
+        <tr>
+    <td align="center" style="padding: 20px 0;">
+        <hr size="3" color="#191970" style="width: 100%;">
+        
+        <h1 style="text-align: center; font-family: verdana; color: #DA70D6; line-height: 1.5; margin: 10px 0;">
+            IR.SOEKARNO <br>
+        </h1>
+        
+        <hr size="3" color="#191970" style="width: 100%;">
+    </td>
+</tr>
+	             <h2>Kepemimpinan dan Proklamasi Kemerdekaan</h2>
+                 <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: #663399;">
+                 pada peristiwa G30S/PKI pada tahun 1965, yang secara perlahan mengikis kekuasaannya. Akhirnya, kekuasaan Soekarno beralih kepada Jenderal Soeharto, menandai berakhirnya era kepemimpinan sang proklamator.</p>
+
+                 <h2>Kepemimpinan dan Proklamasi Kemerdekaan</h2>
+                 <p>Ir. Soekarno adalah tokoh sentral dalam perjuangan kemerdekaan Indonesia dan merupakan Presiden pertama Republik Indonesia> Bersama Mohammad Hatta, Soekarno memproklamasikan kemerdekaan Indonesia pada tanggal 17 Agustus 1945. Pidato dan visi kepemimpinan Soekarno sangat berperan dalam menyatukan berbagai suku, agama, dan golongan di nusantara yang beragam di bawah satu bendera, Negara Kesatuan Republik Indonesia (NKRI). Ia dikenal sebagai "Penyambung Lidah Rakyat" berkat kemampuan orasinya yang luar biasa, membangkitkan semangat nasionalisme dan perlawanan terhadap kolonialisme. Di masa awal kemerdekaan, tantangan utama adalah mempertahankan kedaulatan dari agresi militer Belanda dan membangun fondasi negara yang baru lahir.</p>
+	    <!-- content akhir -->
+	</div>
+	<div id="footer">
+	 <tr>
+        &copy;CopyRight (Naila lesmana, Nim:251011700171, Kelas:01SIFP003)2025
+    </tr>
+</div>
+</body>
+</html>

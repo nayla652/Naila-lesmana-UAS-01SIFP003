@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Layout Web</title>
+    <style>
+    	body{
+    		background-color: #8B4513;
+    	}
+    	#header{
+    		width: 900px;
+    		height:300px;
+    		background-color: deeppink;
+    		background-image:url(gambar/Soekarno.jpg);
+    		margin-left: auto;
+    		margin-right: auto;
+    	}
+    	#content{
+    		width: 850px;
+    		height: auto;
+    		background-color: #5F9EA0;
+    		margin-left: auto;
+    		margin-right: auto;
+    		padding: 10px 20px 10px 20px;
+    		border: 5px dashed #7FFF00;
+    		
+    	}
+    	#content h2{
+    		color: #7FFFD4;
+    		font-size: 24px;
+    		font-family: verdana;
+    	}
+    	#content p{
+    		color: #000000;
+    		font-size: 16px;
+    		font-family: verdana;
+    		text-align: justify;
+    		line-height: 1.8em;
+    	}
+
+    	#footer{
+    		
+    		width: 900px;
+    		height: 50px;
+    		background-color: PINK;
+    		margin-left: auto;
+    		margin-right: auto;
+    		text-align: center;
+    		font-size: 20px;
+    		padding-top: 25;
+    		
+    	}
+    </style>
+     <tr>
+            <td align="center">
+            <!--Menu-->
+            <hr size="2" color="red">
+            <a href="HOME.html"><button>HOME.html</button></a> 
+            <a href="GALLERY US.HTML"><button>GALLERY US.HTML</button></a> 
+            <a href="Formulir.HTML"><button>Formulir.HTML</button></a> 
+            <a href="ABOUT US.HTML"><button>ABOUT US.HTML</button></a>
+            <hr size="2" color="red">
+            <!--Menu-->
+            </td>
+        </tr>
+</head>
+<body>
+	<script>
+    var waktu = new Date();
+    var jam = waktu.getHours();
+    var minute = waktu.getMinutes();
+    
+    // Menambahkan angka 0 di depan menit jika di bawah 10 agar formatnya 10:05 bukan 10:5
+    if (minute < 10) { minute = "0" + minute; }
+
+    // Menampilkan Waktu Lengkap dan Jam
+    document.write("Tanggal: " + waktu.toDateString() + "<br>");
+    document.write("<b>Sekarang Jam " + jam + ":" + minute + "</b><br>");
+    document.write("Halo Pembaca, ");
+
+    // Logika Sapaan
+    if (jam >= 0 && jam <= 9) {
+        document.write("Selamat Pagi!");
+    } 
+    else if (jam <= 13) {
+        document.write("Selamat Siang!");
+    } 
+    else if (jam <= 17) {
+        document.write("Selamat Sore!");
+    } 
+    else {
+        document.write("Selamat Malam!");
+    }
+</script>
+	<div id="header"></div>
+	<div id="content">
+	    <!-- content awal -->
+	    <tr>
+    <td align="center" style="padding: 20px 0;">
+        <hr size="3" color="#A9A9A9" style="width: 100%;">
+        
+        <h1 style="text-align: center; font-family: verdana; color: #E9967A; line-height: 1.5; margin: 10px 0;">
+            FOTO DAN PENJELASANNYA IR.SOEKARNO <br>
+        </h1>
+        
+        <hr size="3" color="#A9A9A9" style="width: 100%;">
+    </td>
+</tr>
+	    <tr>
+    <td style="vertical-align: top; padding: 10px;">
+        <img src="Gambar/Soekarno2.jpeg" alt="Ir. Soekarno" width="400" height="300" align="right" hspace="15" style="border-radius: 8px;">
+        
+        <h2 style="color: #7FFFD4; font-family: verdana;">Profil Ir. Soekarno</h2>
+        
+        <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.6em; color: #FFEBCD;">
+            Ir. Soekarno, atau yang akrab disapa <b>Bung Karno</b>, adalah sosok sentral dalam sejarah Indonesia. Beliau bukan sekadar presiden pertama, melainkan ideolog, orator ulung, dan "Penyambung Lidah Rakyat" yang mendedikasikan hidupnya untuk kemerdekaan bangsa.
+        </p>
+
+        <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: #663399;">
+            <li><b>Nama Asli:</b> Kusno Sosrodihardjo (diubah menjadi Soekarno karena sering sakit saat kecil).</li>
+            <li><b>Tempat, Tanggal Lahir:</b> Surabaya, 6 Juni 1901.</li>
+            <li><b>Meninggal:</b> Jakarta, 21 Juni 1970 (dimakamkan di Blitar, Jawa Timur).</li>
+            <li><b>Orang Tua:</b> Raden Soekemi Sosrodihardjo dan Ida Ayu Nyoman Rai.</li>
+            <li><b>Julukan:</b> Bung Karno, Sang Fajar, Bapak Proklamator.</li>
+        </p>
+    </td>
+</tr>
+
+                  <tr>
+             <td style="vertical-align: top; text-align: center; padding: 20px;">
+           <img src="Gambar/SK.jpg" alt="Ir. Soekarno" width="400" height="300" style="display: block; margin: 0 auto 20px auto; border: 3px solid #8B0000; border-radius: 8px;">
+
+          <h2 style="color: darkred; font-family: verdana;">Pembacaan Proklamasi</h2>
+
+          <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 17px; line-height: 1.6em; color: lightpink;">
+            Foto di atas merupakan momen paling bersejarah bagi bangsa Indonesia, yaitu saat <b>Ir. Soekarno</b> membacakan teks Proklamasi Kemerdekaan Indonesia pada tanggal 17 Agustus 1945. Berikut adalah beberapa fakta penting terkait peristiwa tersebut:
+          </p>
+
+          <ol style="text-align: justify; font-family: 'Times New Roman'; font-size: 17px; line-height: 1.8em; color: lightpink;">
+            <li><b>Lokasi:</b> Peristiwa ini berlangsung di kediaman Soekarno, Jalan Pegangsaan Timur No. 56, Jakarta (sekarang menjadi Gedung Pola atau Taman Proklamasi).</li>
+            <li><b>Waktu:</b> Pembacaan proklamasi dilakukan tepat pada pukul 10.00 WIB di hari Jumat pada bulan Ramadhan.</li>
+            <li><b>Tokoh dalam Foto:</b> Terlihat Bung Karno berdiri di depan mikrofon sambil memegang secarik kertas teks proklamasi didampingi Drs. Mohammad Hatta.</li>
+            <li><b>Fotografer:</b> Foto ikonik ini diabadikan oleh <b>Frans Mendur</b> (IPPHOS). Berkat jasanya, momen ini bisa disaksikan hingga sekarang.</li>
+            <li><b>Makna:</b> Melambangkan kelahiran negara Republik Indonesia dan simbol keberanian serta persatuan bangsa.</li>
+         </ol>
+     </td>
+  </tr>
+
+                  
+                  <tr>
+            <td style="vertical-align: top;">
+                <img src="Gambar/Soekarno8..jpeg" alt="Ir. Soekarno" width="400" height="300" align="right" hspace="5">
+                <ol align="left">
+                    <font face="Times New Roman" size="3" align="justify"></font>
+                </ol>
+            </td>
+            </tr>
+                  <h2>Arsitek Bangsa: Merintis Jalan Revolusioner dan Mengasah Ideologi (1926-1945)</h2>
+                  <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: #C0C0C0;">
+                  Pada 4 Juli 1927, Soekarno bersama rekan-rekannya dari Algemeene Studieclub mentransformasikan kelompok studi tersebut menjadi Partai Nasional Indonesia (PNI). PNI menandai sebuah babak baru dalam pergerakan nasional; ia adalah partai sekuler pertama yang secara terang-terangan memperjuangkan kemerdekaan penuh Indonesia melalui strategi non-kooperasi, yaitu menolak bekerja sama dengan pemerintah kolonial Belanda. Di bawah kepemimpinan Soekarno yang karismatik dan kemampuan orasinya yang memukau, PNI tumbuh dengan pesat. Pada tahun 1929, partai ini telah memiliki sekitar 10.000 anggota, sebuah perkembangan yang menimbulkan kekhawatiran besar bagi pemerintah Hindia Belanda.</p>
+
+                  <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: #8B4513;">
+                  Aktivitas politik PNI yang radikal membuat Soekarno dan para pemimpin lainnya ditangkap pada 29 Desember 1929. Dalam persidangannya di Landraad Bandung pada tahun 1930, ia tidak menyampaikan pembelaan hukum yang sempit, melainkan sebuah pidato politik yang berapi-api berjudul "Indonesia Menggugat". Pledoi ini merupakan sebuah dakwaan tajam terhadap sejarah kolonialisme dan imperialisme, yang mengartikulasikan hak historis dan moral bangsa Indonesia untuk merdeka. Pidato tersebut mengukuhkan statusnya sebagai suara utama gerakan nasionalis. Meskipun divonis empat tahun penjara di Penjara Sukamiskin, tekanan publik yang kuat membuatnya dibebaskan lebih awal pada akhir Desember 1931.</p>
+                  
+            <tr>
+       <td style="vertical-align: top; text-align: center;">
+           <img src="Gambar/Soekarno9.jpeg" alt="Ir. Soekarno" width="400" height="300" style="display: block; margin: 0 auto 20px auto; border: 2px solid darkred;">
+        
+           <h2 style="color: darkred; font-family: verdana; text-align: center;">
+             Sang Ideolog: Pemikiran Politik yang Membentuk Bangsa (1950-1965)
+          </h2>
+            <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: #DCDCDC;">
+                Pemikiran politik Soekarno tidak hanya bersifat reaktif terhadap peristiwa, tetapi juga merupakan sebuah bangunan filosofis yang dirancang untuk menyatukan bangsa dan mengukuhkan posisinya sebagai pemimpin. Setiap gagasan ideologisnya—Pancasila, Marhaenisme, NASAKOM, dan Demokrasi Terpimpin—berfungsi sebagai instrumen pragmatis untuk menyelesaikan tantangan spesifik sambil secara bertahap memusatkan kekuasaan di tangannya sebagai tokoh sentral yang tak tergantikan.
+            </p>
+
+            <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: #483D8B;">
+                Dalam pidatonya yang monumental di hadapan sidang BPUPKI pada 1 Juni 1945, Soekarno untuk pertama kalinya menguraikan gagasan tentang dasar filosofis negara, yang ia namakan Pancasila. Ia tidak mengklaim sebagai penciptanya, melainkan seorang "penggali" yang menemukan lima mutiara prinsip ini dari dalam bumi pertiwi Indonesia. Pancasila merupakan sebuah sintesis yang dirancang untuk mengatasi masalah fundamental persatuan dalam sebuah negara yang sangat majemuk.
+            </p>
+
+            <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: #DDA0DD;">
+                Konsep Marhaenisme lahir dari dialog Soekarno dengan seorang petani miskin bernama Marhaen di wilayah Bandung. Dari sinilah Soekarno mendefinisikan "kaum Marhaen" sebagai mayoritas rakyat Indonesia—petani kecil, pedagang, nelayan, dan buruh—yang tertindas bukan oleh kapitalisme industri, melainkan oleh struktur kolonialisme dan feodalisme.
+            </p>
+        </div>
+    </td>
+</tr>
+	    <!-- content akhir -->
+	</div>
+	<div id="footer">
+	 <tr>
+        &copy;CopyRight (Naila lesmana, Nim:251011700171, Kelas:01SIFP003)2025
+    </tr>
+</div>
+</body>
+</html>

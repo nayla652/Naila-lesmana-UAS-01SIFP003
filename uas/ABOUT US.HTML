@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Layout Web</title>
+    <style>
+        body{
+            background-color: #FAEBD7;
+        }
+        #header{
+            width: 900px;
+            height:300px;
+            background-color: red;
+            background-image:url(gambar/Soekarno.jpg);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #content{
+            width: 850px;
+            height: auto;
+            background-color: #A9A9A9;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 20px 10px 20px;
+            border: 5px dashed #8B008B;
+            
+        }
+        #content h2{
+            color: #DC143C;
+            font-size: 24px;
+            font-family: verdana;
+        }
+        #content p{
+            color: #000000;
+            font-size: 16px;
+            font-family: verdana;
+            text-align: justify;
+            line-height: 1.8em;
+        }
+
+        #footer{
+            
+            width: 900px;
+            height: 50px;
+            background-color: #D2691E;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 25;
+            
+        }
+    </style>
+     <tr>
+            <td align="center">
+            <!--Menu-->
+            <hr size="2" color="red">
+            <a href="HOME.html"><button>HOME.html</button></a> 
+            <a href="GALLERY US.HTML"><button>GALLERY US.HTML</button></a> 
+            <a href="Formulir.HTML"><button>Formulir.HTML</button></a> 
+            <a href="ABOUT US.HTML"><button>ABOUT US.HTML</button></a>
+            <hr size="2" color="red">
+            <!--Menu-->
+            </td>
+        </tr>
+</head>
+<body>
+    <script>
+    var waktu = new Date();
+    var jam = waktu.getHours();
+    var minute = waktu.getMinutes();
+    
+    // Menambahkan angka 0 di depan menit jika di bawah 10 agar formatnya 10:05 bukan 10:5
+    if (minute < 10) { minute = "0" + minute; }
+
+    // Menampilkan Waktu Lengkap dan Jam
+    document.write("Tanggal: " + waktu.toDateString() + "<br>");
+    document.write("<b>Sekarang Jam " + jam + ":" + minute + "</b><br>");
+    document.write("Halo Pembaca, ");
+
+    // Logika Sapaan
+    if (jam >= 0 && jam <= 9) {
+        document.write("Selamat Pagi!");
+    } 
+    else if (jam <= 13) {
+        document.write("Selamat Siang!");
+    } 
+    else if (jam <= 17) {
+        document.write("Selamat Sore!");
+    } 
+    else {
+        document.write("Selamat Malam!");
+    }
+</script>
+    <div id="header"></div>
+    <div id="content">
+        <!-- content awal -->
+        <tr>
+    <td align="center" style="padding: 20px 0;">
+        <hr size="3" color="white" style="width: 100%;">
+        
+        <h1 style="text-align: center; font-family: verdana; color: black; line-height: 1.5; margin: 10px 0;">
+            SEJARAH PRESIDEN 1 INDONESIA <br>
+            IR. SOEKARNO
+        </h1>
+        
+        <hr size="3" color="white" style="width: 100%;">
+    </td>
+        <tr>
+    <td style="vertical-align: top; padding: 15px;">
+        <img src="Gambar/Soekarno10.jpeg" alt="Ir. Soekarno" width="400" height="300" align="left" hspace="20" vspace="5" style="border-radius: 10px; border: 2px solid darkred;">
+        
+        <h2 style="color: darkred; font-family: verdana; margin-top: 0;">
+            Presiden Bangsa Baru: Puncak Kekuasaan dan Tantangan Pembangunan (1950-1965)
+        </h2>
+
+            <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: blue;">
+                Masa kepresidenan Soekarno diwarnai oleh upaya gigih untuk membangun identitas nasional yang kuat dan menempatkan Indonesia sebagai kekuatan yang disegani di dunia. Prioritasnya adalah pada revolusi politik dan pembangunan simbol-simbol kebangsaan, sebuah pilihan yang berhasil mengangkat citra Indonesia di panggung internasional namun mengabaikan manajemen ekonomi domestik yang pragmatis.
+            </p>
+
+            <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: blue;">
+                Soekarno adalah salah satu penggagas utama dan tuan rumah <b>Konferensi Asia-Afrika (KAA)</b> di Bandung pada April 1955. Perhelatan ini merupakan konferensi antarbenua pertama yang diikuti oleh "bangsa-bangsa kulit berwarna" tanpa partisipasi kekuatan kolonial Barat. Dihadiri oleh 29 negara dari Asia dan Afrika, KAA menjadi fondasi bagi lahirnya Gerakan Non-Blok (GNB). Dalam pidato pembukaannya yang terkenal, <i>"Let a New Asia and a New Africa be Born"</i>, Soekarno dengan lantang menyuarakan semangat solidaritas, anti-kolonialisme, dan hak menentukan nasib sendiri. Peristiwa ini melambungkan namanya dan menempatkan Indonesia sebagai pemimpin <b>"New Emerging Forces (NEFOS)"</b>.
+            </p>
+
+            <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: blue;">
+                Soekarno memahami betul kekuatan simbol. Ia menggunakan arsitektur sebagai alat untuk membangun bangsa (nation-building), dengan menugaskan proyek-proyek monumental yang bertujuan menanamkan rasa bangga dan persatuan nasional. Warisannya yang paling ikonik antara lain <b>Monumen Nasional (Monas)</b>, <b>Masjid Istiqlal</b>, kompleks olahraga <b>Gelora Bung Karno</b>, dan <b>Hotel Indonesia</b>. Proyek-proyek mercusuar ini dirancang untuk menunjukkan kepada dunia dan kepada rakyatnya sendiri bahwa Indonesia adalah bangsa yang besar dan berdaulat di bawah semboyan Bhinneka Tunggal Ika.
+            </p>
+        </td>
+    </tr>
+        
+         <tr>
+            <td style="vertical-align: top;">
+                <img src="Gambar/Soekarno4.jpeg" alt="Ir. Soekarno" width="400" height="300" align="right" hspace="10">
+                <ol align="left">
+                    <font face="Times New Roman" size="3" align="justify">
+                    <li> <h2>Kepemimpinan dan Proklamasi Kemerdekaan</h2> </li>
+                
+                    <p>Ir. Soekarno adalah tokoh sentral dalam perjuangan kemerdekaan Indonesia dan merupakan Presiden pertama Republik Indonesia. Bersama Mohammad Hatta, Soekarno memproklamasikan kemerdekaan Indonesia pada tanggal 17 Agustus 1945. Pidato dan visi kepemimpinan Soekarno sangat berperan dalam menyatukan berbagai suku, agama, dan golongan di nusantara yang beragam di bawah satu bendera, Negara Kesatuan Republik Indonesia (NKRI). Ia dikenal sebagai "Penyambung Lidah Rakyat" berkat kemampuan orasinya yang luar biasa, membangkitkan semangat nasionalisme dan perlawanan terhadap kolonialisme. Di masa awal kemerdekaan, tantangan utama adalah mempertahankan kedaulatan dari agresi militer Belanda dan membangun fondasi negara yang baru lahir.</p>
+
+                  <tr>
+        <td style="vertical-align: top; padding: 10px;">
+        <img src="Gambar/Soekarno5.jpeg" alt="Ir. Soekarno" width="400" height="300" align="left" hspace="20" vspace="10" style="border-radius: 8px; border: 1px solid #ccc;">
+        
+        <h2 style="color: darkred; font-family: verdana; margin-top: 0;">
+            Membangun Identitas Bangsa dan Ideologi
+        </h2>
+        
+        <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: blue;">
+            Selama masa kepemimpinannya, Soekarno berupaya keras untuk membangun identitas dan karakter bangsa Indonesia. Ia merumuskan dan memperjuangkan <b>Pancasila</b> sebagai dasar filosofis negara, yang intinya adalah lima prinsip dasar yang menjadi pedoman hidup berbangsa dan bernegara. 
+        </p>
+        
+        <p style="text-align: justify; font-family: 'Times New Roman'; font-size: 18px; line-height: 1.8em; color: blue;">
+            Soekarno juga memperkenalkan konsep <b>Nasakom</b> (Nasionalisme, Agama, dan Komunisme) sebagai upaya untuk menyatukan tiga kekuatan politik utama saat itu, meskipun konsep ini kemudian memicu ketegangan politik. Di kancah internasional, Soekarno berperan penting dalam memimpin <b>Konferensi Asia-Afrika (KAA)</b> di Bandung pada tahun 1955, yang melahirkan Gerakan Non-Blok, menegaskan posisi Indonesia sebagai negara yang menolak beraliansi dengan blok Barat maupun Timur dalam Perang Dingin.
+        </p>
+    </td>
+</tr>
+                    
+                    <tr>
+            <td style="vertical-align: top;">
+                <img src="Gambar/Soekarno6.jpeg" alt="Ir. Soekarno" width="400" height="300" align="right" hspace="5">
+                <ol align="left">
+                    <font face="Times New Roman" size="3" align="justify"></font>
+                </ol>
+            </td>
+        </tr>
+                    <li> <h2>Demokrasi Terpimpin dan Akhir Kekuasaan</h2> </li>
+
+                    <p>Pada akhir 1950-an, Soekarno menerapkan sistem Demokrasi Terpimpin, mengakhiri periode Demokrasi Parlementer yang dinilainya tidak stabil. Di bawah Demokrasi Terpimpin, kekuasaan presiden menjadi sangat dominan. Periode ini ditandai dengan proyek-proyek pembangunan besar seperti Monumen Nasional (Monas), serta politik luar negeri yang semakin konfrontatif, termasuk konfrontasi dengan Malaysia yang dikenal sebagai Dwikora. Namun, ketidakstabilan politik internal dan krisis ekonomi yang memburuk, berpuncak pada peristiwa G30S/PKI pada tahun 1965, yang secara perlahan mengikis kekuasaannya. Akhirnya, kekuasaan Soekarno beralih kepada Jenderal Soeharto, menandai berakhirnya era kepemimpinan sang proklamator.</p>
+                    </font>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td font face="Times New Romance" bgcolor="red" height="100" align="center">
+        <!-- content akhir -->
+    </div>
+    <div id="footer">
+     <tr>
+        &copy;CopyRight (Naila lesmana, Nim:251011700171, Kelas:01SIFP003)2025
+    </tr>
+</div>
+</body>
+</html>
